@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Registration Form</title>
+
+  <!-- Google Font + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="hostelform.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2><i class="fa-solid fa-bed"></i> Hostel Registration Form</h2>
+
+    <form id="hostelForm">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="regNo">Registration Number:</label>
+        <input type="text" id="regNo" placeholder="Enter university registration number" required>
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="gender-group">
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <select id="course" required>
+          <option value="">-- Select Course --</option>
+          <option>B.Tech</option>
+          <option>M.Tech</option>
+          <option>B.Sc</option>
+          <option>M.Sc</option>
+          <option>BBA</option>
+          <option>MBA</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="year">Year of Study:</label>
+        <select id="year" required>
+          <option value="">-- Select Year --</option>
+          <option>1st Year</option>
+          <option>2nd Year</option>
+          <option>3rd Year</option>
+          <option>4th Year</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Mobile Number:</label>
+        <input type="tel" id="phone" placeholder="Enter your mobile number" maxlength="10" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Permanent Address:</label>
+        <textarea id="address" rows="3" placeholder="Enter your home address" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="roomType">Preferred Room Type:</label>
+        <select id="roomType" required>
+          <option value="">-- Select Room Type --</option>
+          <option>Single Room</option>
+          <option>Double Sharing</option>
+          <option>Triple Sharing</option>
+        </select>
+      </div>
+
+      <button type="submit"><i class="fa-solid fa-paper-plane"></i> Submit Registration</button>
+    </form>
+
+    <div class="success-message" id="successMessage">
+      ✅ Your hostel registration form has been submitted successfully!
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
